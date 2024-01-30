@@ -118,9 +118,9 @@ the probability of finding the system in the state $\ket{\psi_2}$ is 0.
 The probability of measuring $\ket{\psi_0}$ in the $+x$ state is given by $P(+x) = \left| \braket{+x | \psi_0} \right|^2$.
 
 \begin{flalign*}
-    \braket{+x \; | \; \psi_0} &= \bra{+x} \left( \frac{1}{\sqrt{10}}\ket{+x} - \frac{3}{\sqrt{10}}\ket{-x} \right) \\
-                               &= \frac{1}{\sqrt{10}}\braket{+x \; | +x} - \frac{3}{\sqrt{10}}\braket{+x \; | -x} \\
-                               &= \frac{1}{\sqrt{10}} \\
+    \braket{+x \; | \; \psi_0} &= \bra{+x} \left( \frac{i}{\sqrt{10}}\ket{+x} - \frac{3}{\sqrt{10}}\ket{-x} \right) \\
+                               &= \frac{i}{\sqrt{10}}\braket{+x \; | +x} - \frac{3}{\sqrt{10}}\braket{+x \; | -x} \\
+                               &= \frac{i}{\sqrt{10}} \\
 \end{flalign*}
 
 \noindent
@@ -130,15 +130,57 @@ finding $\ket{\psi_0}$ in the $-x$ state is $90\%$. \\
 \noindent
 Knowing this, we can now draw the SG-experiment. \\
 
-\includegraphics*[scale=0.6]{images/2a.png}
+\includegraphics*[scale=0.575]{images/2a.png}
+
+\newpage
 
 \subsection*{b.}
 
 \noindent
-The state $\ket{\psi_1}$ after the measurement of $S_x$ is given by the projection
-of $\ket{\psi_0}$ onto the $+x$ state.
+The possble outcomes of the $S_z$ measurement are $\ket{+z}$ and $\ket{-z}$. This is because the eigenvalues of $S_z$
+are $\pm \frac{\hbar}{2}$.
+
+\subsection*{c.}
+
+\noindent
+The probability of finding the system in $\ket{-z}$ after the last analyzer is given by:
 
 \begin{flalign*}
-    \ket{\psi_1} &= \frac{\braket{+x \; | \; \psi_0}}{\left| \braket{+x \; | \; \psi_0} \right|} \ket{+x} \\
-                 &= \frac{1}{\sqrt{10}} \ket{+x} \\
+    P(-z) &= \left| \braket{-z \; | -x} \right|^2 \left| \braket{-x \; | \; \psi_0} \right|^2 \; \Longleftrightarrow \; \left| \braket{-x \; | \; \psi_0} \right|^2 = 0.9 \\
+\end{flalign*}
+
+\noindent
+So,
+
+\begin{flalign*}
+    \braket{-z \; | -x} &= \bra{-z} \left( \frac{1}{\sqrt{2}}\ket{+z} - \frac{1}{\sqrt{2}}\ket{-z} \right) \\
+                        &= \frac{1}{\sqrt{2}}\braket{-z \; | +z} - \frac{1}{\sqrt{2}}\braket{-z \; | -z} \\
+                        &= -\frac{1}{\sqrt{2}} \\
+\end{flalign*}
+
+\noindent
+Thus, the probability of finding the system in $\ket{-z}$ after the last analyzer is:
+
+\begin{flalign*}
+    P(-z) &= \left| -\frac{1}{\sqrt{2}} \right|^2 \left| \braket{-x \; | \; \psi_0} \right|^2 \\
+          &= \frac{1}{2} \cdot 0.9 \\
+          &= 0.45
+\end{flalign*}
+
+\noindent
+Similarly, for the $+z$ state, we have $P(+z) = \left| \braket{+z \; | -x} \right|^2 \left| \braket{-x \; | \; \psi_0} \right|^2$. \\
+
+\begin{flalign*}
+    \braket{+z \; | -x} &= \bra{+z} \left( \frac{1}{\sqrt{2}}\ket{+z} - \frac{1}{\sqrt{2}}\ket{-z} \right) \\
+                        &= \frac{1}{\sqrt{2}}\braket{+z \; | +z} - \frac{1}{\sqrt{2}}\braket{+z \; | -z} \\
+                        &= \frac{1}{\sqrt{2}} \\
+\end{flalign*}
+
+\noindent
+So,
+
+\begin{flalign*}
+    P(+z) &= \left| \frac{1}{\sqrt{2}} \right|^2 \left| \braket{-x \; | \; \psi_0} \right|^2 \\
+          &= \frac{1}{2} \cdot 0.9 \\
+          &= 0.45
 \end{flalign*}
