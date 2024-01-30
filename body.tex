@@ -247,3 +247,37 @@ since we have done this many times before, we get:
 \begin{flalign*}
     & \ket{\psi_2} = \sqrt{\frac{2}{5}} \left( i\ket{\phi_2} + \sqrt{\frac{3}{2}}i \ket{\phi_3} \right)
 \end{flalign*}
+
+
+\subsection*{c.}
+
+\begin{flalign*}
+    & \braket{\phi_1 | \psi_1} = \bra{\phi_1} \left( a\ket{\phi_1} + b\ket{\phi_2} - \frac{1}{2}\ket{\phi_3} \right) = a = \frac{\sqrt{3}}{2\sqrt{2}}
+\end{flalign*}
+
+\begin{flalign*}
+    & \braket{\phi_2 | \psi_1} = \bra{\phi_2} \left( a\ket{\phi_1} + b\ket{\phi_2} - \frac{1}{2}\ket{\phi_3} \right) = b = \frac{\sqrt{3}}{2\sqrt{2}}
+\end{flalign*}
+
+\begin{flalign*}
+    & \braket{\phi_3 | \psi_1} = \bra{\phi_3} \left( a\ket{\phi_1} + b\ket{\phi_2} - \frac{1}{2}\ket{\phi_3} \right) = -\frac{1}{2} \\
+\end{flalign*}
+
+\noindent
+Thus, the probabilities are as such:
+
+\begin{flalign*}
+    & P(\phi_1) = \left| \braket{\phi_1 | \psi_1} \right|^2 = \frac{3}{8}
+\end{flalign*}
+
+\begin{flalign*}
+    & P(\phi_2) = \left| \braket{\phi_2 | \psi_1} \right|^2 = \frac{3}{8}
+\end{flalign*}
+
+\begin{flalign*}
+    & P(\phi_3) = \left| \braket{\phi_3 | \psi_1} \right|^2 = \frac{1}{4} \\
+\end{flalign*}
+
+\noindent
+Hence, if a measurement on $\ket{\psi_1}$ is made, the most likely outcome is $\ket{\phi_1}$ or $\ket{\phi_2}$,
+with a probability of $\frac{3}{8}$ each.
