@@ -245,7 +245,7 @@ The above value of $c$ will make $psi_1$ and $psi_2$ orthogonal to each other. H
 since we have done this many times before, we get:
 
 \begin{flalign*}
-    & \ket{\psi_2} = \sqrt{\frac{2}{5}} \left( i\ket{\phi_2} + \sqrt{\frac{3}{2}}i \ket{\phi_3} \right)
+    \ket{\psi_2} &= \sqrt{\frac{2}{5}} \left( i\ket{\phi_2} + \sqrt{\frac{3}{2}}i \ket{\phi_3} \right) = \sqrt{\frac{2}{5}}i\ket{\phi_2} + \sqrt{\frac{3}{5}}i\ket{\phi_3}
 \end{flalign*}
 
 
@@ -281,3 +281,26 @@ Thus, the probabilities are as such:
 \noindent
 Hence, if a measurement on $\ket{\psi_1}$ is made, the most likely outcome is $\ket{\phi_1}$ or $\ket{\phi_2}$,
 with a probability of $\frac{3}{8}$ each.
+
+
+\newpage
+
+\subsection*{d.}
+
+\begin{flalign*}
+    \braket{\phi_1 | \psi_2} &= \bra{\phi_1} \left( \sqrt{\frac{2}{5}}i\ket{\phi_2} + \sqrt{\frac{3}{5}}i\ket{\phi_3} \right) = 0 \\
+    \braket{\phi_2 | \psi_2} &= \bra{\phi_2} \left( \sqrt{\frac{2}{5}}i\ket{\phi_2} + \sqrt{\frac{3}{5}}i\ket{\phi_3} \right) = \sqrt{\frac{2}{5}}i \\
+    \braket{\phi_3 | \psi_2} &= \bra{\phi_3} \left( \sqrt{\frac{2}{5}}i\ket{\phi_2} + \sqrt{\frac{3}{5}}i\ket{\phi_3} \right) = \sqrt{\frac{3}{5}}i \\
+\end{flalign*}
+
+\noindent
+Thus, the probabilities are as such:
+
+\begin{flalign*}
+    P(\phi_1) &= \left| \braket{\phi_1 | \psi_2} \right|^2 = 0 \\
+    P(\phi_2) &= \left| \braket{\phi_2 | \psi_2} \right|^2 = \frac{2}{5} \\
+    P(\phi_3) &= \left| \braket{\phi_3 | \psi_2} \right|^2 = \frac{3}{5} \\
+\end{flalign*}
+
+\noindent
+Hence, if a measurement on $\ket{\psi_2}$ is made, the most likely outcome is $\ket{\phi_3}$.
