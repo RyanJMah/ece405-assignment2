@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper, margin=1in]{geometry}
+
+\usepackage[default, scale=0.9]{opensans}
+\usepackage[T1]{fontenc}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0, 0.6, 0}
+\definecolor{codegray}{rgb}{0.5, 0.5, 0.5}
+\definecolor{codepurple}{rgb}{0.58, 0, 0.82}
+\definecolor{codelightgray}{HTML}{919191}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codelightgray},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codegreen},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    belowskip=0.5cm,
+    aboveskip=0.5cm
+}
+\lstset{style=mystyle}
+
+\NewDocumentCommand{\codeword}{v}{%
+    \texttt{\textcolor{magenta}{#1}}%
+}
+
+\usepackage{xurl}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{amsmath, amssymb, bm, mathtools, mathdots}
+\usepackage{braket}
+
+\begin{document}
+
+\title{ECE 405 Assignment 1}
+\author{Ryan Mah \\ 20814200}
+\date{\vspace{-2ex}}
+\maketitle
+
+\input{body.tex}
+
+\end{document}
