@@ -318,3 +318,29 @@ The probability of finding the system in state $\ket{\psi_2}$ after a measuremen
 \noindent
 Since $\ket{\psi_1}$ and $\ket{\psi_2}$ are orthogonal to each other, $\braket{\psi_2 | \psi_1} = 0$, meaning that the
 probability is $0$.
+
+
+\section*{Question 4}
+
+First, we normalize $\ket{\psi}$. Skipping steps, we get:
+
+\begin{flalign*}
+    \ket{\psi} &= \sqrt{\frac{3}{5}} \left( \frac{i}{\sqrt{3}}\ket{+z} - \frac{2}{\sqrt{3}}\ket{-z} \right) = \frac{i}{\sqrt{5}}\ket{+z} - \frac{2}{\sqrt{5}}\ket{-z}    
+\end{flalign*}
+
+\newpage
+
+Now,
+
+\begin{flalign*}
+    \braket{\chi | \psi} &= \left( \frac{1}{\sqrt{2}}\ket{+z} + \frac{1}{\sqrt{2}}\ket{-z} \right)^* \left( \frac{i}{\sqrt{5}}\ket{+z} - \frac{2}{\sqrt{5}}\ket{-z} \right) \\
+                         &= \frac{i}{\sqrt{10}}\braket{+z | +z} - \frac{2}{\sqrt{10}}\braket{-z | -z} \\
+                         &= \frac{i}{\sqrt{10}} - \frac{2}{\sqrt{10}} \\
+\end{flalign*}
+
+\noindent
+Thus,
+
+\begin{flalign*}
+    & P(\chi) = \left| \braket{\chi | \psi} \right|^2 = \frac{1}{10} + \frac{4}{10} = \frac{1}{2} \\
+\end{flalign*}
