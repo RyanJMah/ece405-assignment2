@@ -2,3 +2,58 @@
 
 \subsection*{a.}
 
+\noindent
+$\ket{\psi}$ is already normalized:
+
+\begin{flalign*}
+    \braket{\psi | \psi} &= \left( \frac{1}{\sqrt{2}}\bra{\phi_1} - \frac{i}{\sqrt{2}}\bra{\phi_2} \right) \left( \frac{1}{\sqrt{2}}\ket{\phi_1} + \frac{i}{\sqrt{2}}\ket{\phi_2} \right) \\\\
+                         &= \frac{1}{2}\braket{\phi_1 | \phi_1} + \frac{i}{2}\braket{\phi_2 | \phi_1} - \frac{i}{2}\braket{\phi_1 | \phi_2} + \frac{1}{2}\braket{\phi_2 | \phi_2} \\
+\end{flalign*}
+
+\noindent
+Since $\ket{\phi_1}$ and $\ket{\phi_2}$ are eigenstates of a Hermitian operator, they are orthogonal to each other. \\
+
+\noindent
+Thus, $\braket{\phi_1 | \phi_2} = \braket{\phi_2 | \phi_1} = 0$, and $\braket{\phi_1 | \phi_1} = \braket{\phi_2 | \phi_2} = 1$, meaning:
+
+\begin{flalign*}
+    & \braket{\psi | \psi} = 1
+\end{flalign*}
+
+\subsection*{b.}
+
+\noindent
+A measurement made on $\ket{\psi}$ with respect to $\matbf{\Phi}$ can only yield either $\phi_1$ or $\phi_2$,
+since they are the eigenvales of $\matbf{\Phi}$. \\
+
+\noindent
+The probability of measuring $\phi_1$ is given by $P(\phi_1) = \left| \braket{\phi_1 | \psi} \right|^2$.
+
+\begin{flalign*}
+    \braket{\phi_1 | \psi} &= \bra{\phi_1} \left( \frac{1}{\sqrt{2}}\ket{\phi_1} + \frac{i}{\sqrt{2}}\ket{\phi_2} \right) \\
+                           &= \frac{1}{\sqrt{2}}\braket{\phi_1 | \phi_1} + \frac{i}{\sqrt{2}}\braket{\phi_1 | \phi_2} \\
+                           &= \frac{1}{\sqrt{2}}
+\end{flalign*}
+
+\noindent
+Thus,
+
+\begin{flalign*}    
+    & P(\phi_1) = \left| \frac{1}{\sqrt{2}} \right|^2 = \frac{1}{2} \\
+\end{flalign*}
+
+\noindent
+Similarly, for $\phi_2$, $P(\phi_2) = \left| \braket{\phi_2 | \psi} \right|^2$.
+
+\begin{flalign*}
+    \braket{\phi_2 | \psi} &= \bra{\phi_2} \left( \frac{1}{\sqrt{2}}\ket{\phi_1} + \frac{i}{\sqrt{2}}\ket{\phi_2} \right) \\
+                           &= \frac{1}{\sqrt{2}}\braket{\phi_2 | \phi_1} + \frac{i}{\sqrt{2}}\braket{\phi_2 | \phi_2} \\
+                           &= \frac{i}{\sqrt{2}}
+\end{flalign*}
+
+\noindent
+Thus,
+
+\begin{flalign*}    
+    & P(\phi_2) = \left| \frac{i}{\sqrt{2}} \right|^2 = \frac{1}{2} \\
+\end{flalign*}
