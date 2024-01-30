@@ -55,5 +55,45 @@ Similarly, for $\phi_2$, $P(\phi_2) = \left| \braket{\phi_2 | \psi} \right|^2$.
 Thus,
 
 \begin{flalign*}    
-    & P(\phi_2) = \left| \frac{i}{\sqrt{2}} \right|^2 = \frac{1}{2} \\
+    & P(\phi_2) = \left| \frac{i}{\sqrt{2}} \right|^2 = \frac{1}{2}
+\end{flalign*}
+
+\subsection*{c.}
+
+% I need to find another quantum state that is orthogonal to Psi
+
+\noindent
+To find another quantum state that is orthogonal to $\ket{\Psi}$, we can set the inner product of the two states to 0. \\
+
+\noindent
+Let $\ket{\Psi_2} = \alpha\ket{\phi_1} + \beta\ket{\phi_2}, \; \phi_1, \phi_2 \in \mathbb{C}$,
+
+\begin{flalign*}
+    \braket{\Psi | \Psi_2} = 0 &= \left( \frac{1}{\sqrt{2}}\bra{\phi_1} - \frac{i}{\sqrt{2}}\bra{\phi_2} \right) \left( \alpha\ket{\phi_1} + \beta\ket{\phi_2} \right) \\
+                               &= \frac{\alpha}{\sqrt{2}}\braket{\phi_1 | \phi_1} + \frac{\beta}{\sqrt{2}}\braket{\phi_2 | \phi_1} - \frac{i\alpha}{\sqrt{2}}\braket{\phi_1 | \phi_2} - \frac{i\beta}{\sqrt{2}}\braket{\phi_2 | \phi_2} \\
+                               &= \frac{\alpha}{\sqrt{2}} - \frac{i\beta}{\sqrt{2}} \\
+                               &= \frac{1}{\sqrt{2}}(\alpha - i\beta) \\
+\end{flalign*}
+
+\noindent
+Thus, we get that $0 = \alpha - i\beta$. Let $\alpha = x_{\alpha} + iy_{\alpha}$ and $\beta = x_{\beta} + iy_{\beta}$, where $x_{\alpha}, y_{\alpha}, x_{\beta}, y_{\beta} \in \mathbb{R}$. \\
+
+\noindent
+Then,
+
+\begin{flalign*}
+    0 &= \alpha - i\beta \\
+    0 &= (x_{\alpha} + iy_{\alpha}) - i(x_{\beta} + iy_{\beta}) \\
+    0 &= x_{\alpha} + iy_{\alpha} - ix_{\beta} + y_{\beta} \\
+    0 &= (x_{\alpha} + y_{\beta}) + i(y_{\alpha} - x_{\beta}) \\
+\end{flalign*}
+
+\noindent
+So, $x_{\alpha} = -y_{\beta}$ and $x_{\beta} = y_{\alpha}$. Let $\alpha = \frac{1}{\sqrt{2}}(1 + i)$ and $\beta = \frac{1}{\sqrt{2}}(1 - i)$. \\
+
+\noindent
+Thus, another quantum state that is orthogonal to $\ket{\Psi}$ is:
+
+\begin{flalign*}
+    & \ket{\Psi_2} = \frac{1}{\sqrt{2}}(1 + i)\ket{\phi_1} + \frac{1}{\sqrt{2}}(1 - i)\ket{\phi_2}
 \end{flalign*}
