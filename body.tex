@@ -185,3 +185,41 @@ So,
           &= 0.45
 \end{flalign*}
 
+\section*{Question 3}
+
+\subsection*{a.}
+
+% need to normalize psi 1
+
+\begin{flalign*}
+    \braket{\psi_1 | \psi_1} = 1 &= \left( a\ket{\phi_1} + b\ket{\phi_2} - \frac{1}{2}\ket{\phi_3} \right)^* \left( a\ket{\phi_1} + b\ket{\phi_2} - \frac{1}{2}\ket{\phi_3} \right) \\
+                                 &= \left( a^*\bra{\phi_1} + b^*\bra{\phi_2} - \frac{1}{2}\bra{\phi_3} \right) \left( a\ket{\phi_1} + b\ket{\phi_2} - \frac{1}{2}\ket{\phi_3} \right) \\
+                                 &= \left| a \right|^2\braket{\phi_1 | \phi_1} + \left| b \right|^2\braket{\phi_2 | \phi_2} + \frac{1}{4}\braket{\phi_3 | \phi_3} \\\\
+                                 &= \left| a \right|^2 + \left| b \right|^2 + \frac{1}{4} \\
+\end{flalign*}
+
+\noindent
+Thus, we have a circle:
+
+\begin{flalign*}
+    & \frac{3}{4} = \left| a \right|^2 + \left| b \right|^2 \\
+\end{flalign*}
+
+\noindent
+Any $a$ and $b$ that satisfy the above equation will normalize $\ket{\psi_1}$. \\
+
+\noindent
+However, given that $a$ and $b$ are not unique, $a = b$, meaning
+
+\begin{flalign*}
+    \frac{3}{4} &= 2\left| a \right|^2 \\
+    \frac{3}{8} &= \left| a \right|^2 \\
+    \left| a \right| &= \left| b \right| = \frac{\sqrt{3}}{2\sqrt{2}} \\
+\end{flalign*}
+
+\noindent
+Picking $a$ and $b$ to have the zero phase (the most simple case), we get:
+
+\begin{flalign*}
+    & a = b = \frac{\sqrt{3}}{2\sqrt{2}} \\
+\end{flalign*}
